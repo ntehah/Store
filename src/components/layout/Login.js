@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import user from "./user.png";
 import pass from "./pass.png";
+import {Link} from "react-router-dom"; 
 const Div = styled.div`
   align-items: center;
   display: flex;
@@ -52,7 +53,7 @@ const Img = styled.img``;
 const Login = props => (
   <Div>
     <div className="button-login">
-      <button>تسجيل الدخول</button>
+      <button><Link to={`/mycompte`}>تسجيل الدخول</Link></button>
       <button>انشاء حساب</button>
     </div>
     <div className="input-login">

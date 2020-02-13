@@ -14,9 +14,11 @@ const Div = styled.div`
 //------------------------------------------------------------------------
 
 const CartProduct = props => {
+  const imag=`data:image/jpeg;base64,${props.Cart.images[0].image}`;
+  console.log(typeof imag)
   return (
       <Card border="secondary" style={{ width: "80%",height:"200px" , margin:"auto"}}>
-        <Card.Img style={{width:"100%", height:"100px"}} variant="top" src={image}/>
+        <Card.Img style={{width:"100%", height:"100px"}} variant="top" src={imag}/>
         <ListGroup variant="flush">
   <ListGroup.Item style={{ textAlign:"right"}}>{props.Cart.title}</ListGroup.Item>
     <ListGroup.Item style={{ textAlign:"center"}}>{props.Cart.prix}</ListGroup.Item>

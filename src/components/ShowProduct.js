@@ -163,11 +163,10 @@ const ListOfpro = [
     
   },
 ];
-const products = fetch("https://localhost:44385/api/Products");
+
 
 function ShowProduct ({match}){
   let product = ListOfpro.find(p=> p.id == match.params.id);
-  console.log(products);
     return (
       <Div>
 
